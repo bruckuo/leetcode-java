@@ -1,13 +1,13 @@
-package com.neu.x.leetcodejava;
+package com.neu.x.leetcode;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LeetcodeJavaApplication {
+public class LeetcodeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LeetcodeJavaApplication.class, args);
+		SpringApplication.run(LeetcodeApplication.class, args);
 	}
 
 }
