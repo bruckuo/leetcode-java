@@ -5,7 +5,7 @@ package com.neu.x.leetcode.listNode;
  * @ author: jiangdongxue
  * @ created: 2019-03-12 下午10:18
  */
-public class SwapPairsSolution {
+public class ListNodeSolution {
     private static class ListNode {
         int val;
         ListNode next;
@@ -132,7 +132,7 @@ public class SwapPairsSolution {
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
-        ListNode result = reverse1(node);
+        ListNode result = reverse2(node);
         System.out.print(result.val);
     }
 }
