@@ -1,7 +1,7 @@
 package com.neu.x.leetcode.listNode;
 
 /**
- * @ description: ListNode
+ * @ description: Node
  * @ author: jiangdongxue
  * @ created: 2019-03-12 下午10:18
  */
@@ -15,7 +15,7 @@ public class ListNodeSolution {
     /**
      * 两两交换链表中的节点
      * @param head node
-     * @return ListNode
+     * @return Node
      */
     public static ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null){
@@ -31,7 +31,7 @@ public class ListNodeSolution {
      * 删除链表的倒数第N个节点
      * @param head node
      * @param n 删除节点
-     * @return ListNode
+     * @return Node
      */
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
@@ -55,7 +55,7 @@ public class ListNodeSolution {
      * 合并两个有序链表
      * @param l1 node1
      * @param l2 node2
-     * @return ListNode
+     * @return Node
      */
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // 类似归并排序中的合并过程
@@ -85,7 +85,7 @@ public class ListNodeSolution {
      * 单链表反转
      * 解答 递归，在反转当前节点之前先反转后续节点
      * @param head node
-     * @return ListNode
+     * @return Node
      */
     public static ListNode reverse1(ListNode head) {
         // head看作是前一结点，head.getNext()是当前结点，reHead是反转后新链表的头结点
@@ -102,7 +102,7 @@ public class ListNodeSolution {
      * 单链表反转
      * 解答 递归，在反转当前节点之前先反转后续节点
      * @param head node
-     * @return ListNode
+     * @return Node
      */
     public static ListNode reverse2(ListNode head) {
         if (head == null)
