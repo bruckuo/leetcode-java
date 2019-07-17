@@ -52,6 +52,24 @@ public class ListNodeSolution {
     }
 
     /**
+     * 删除链表的第N个节点
+     * @param head node
+     * @param n 删除节点
+     * @return Node
+     */
+    public static ListNode removeNthFromStart(ListNode head, int n) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode first = dummy;
+        // Move first to the end, maintaining the gap
+        for (int i = 0; i < n - 1; i++) {
+            first = first.next;
+        }
+        first.next = first.next.next;
+        return dummy.next;
+    }
+
+    /**
      * 合并两个有序链表
      * @param l1 node1
      * @param l2 node2
@@ -123,11 +141,11 @@ public class ListNodeSolution {
     }
 
     public static void main(String[] args) {
-        ListNode node = new ListNode(0);
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
+        ListNode node = new ListNode(10);
+        ListNode node1 = new ListNode(11);
+        ListNode node2 = new ListNode(12);
+        ListNode node3 = new ListNode(13);
+        ListNode node4 = new ListNode(14);
         node.next = node1;
         node1.next = node2;
         node2.next = node3;
