@@ -24,8 +24,7 @@ public class Solution {
         for(Character c : s.toCharArray()){
             if(stack.isEmpty() || map.containsKey(c)) {
                 stack.push(c);
-            }
-            else if(map.get(stack.peek()).equals(c)) {
+            } else if(map.get(stack.peek()).equals(c)) {
                 stack.pop();
             } else {
                 return false;
