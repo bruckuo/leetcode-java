@@ -1,6 +1,7 @@
 package com.neu.x.leetcode.redisLock;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
@@ -14,6 +15,7 @@ import java.util.UUID;
  * @time: 11:03
  */
 @Slf4j
+@Service
 public class RedisLockServiceImpl {
     /**
      * 等待时间间隔，单位毫秒
