@@ -9,8 +9,6 @@ import java.util.Stack;
  * @author: guojiang.xiong
  * @date: 2019-07-19
  * @time: 11:40
- * Copyright (C) 2018 MTDP
- * All rights reserved
  */
 public class Solution {
     private static final Map<Character,Character> map = new HashMap<Character,Character>(){{

@@ -8,8 +8,6 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author: guojiang.xiong
  * @date: 2019-10-08
  * @time: 15:31
- * Copyright (C) 2018 MTDP
- * All rights reserved
  */
 public class TwoThreadPrinter {
     private static AtomicInteger countAtomicInteger = new AtomicInteger(0);

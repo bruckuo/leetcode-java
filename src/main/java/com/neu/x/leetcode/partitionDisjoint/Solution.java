@@ -5,8 +5,6 @@ package com.neu.x.leetcode.partitionDisjoint;
  * @author: guojiang.xiong
  * @date: 2019-08-13
  * @time: 10:32
- * Copyright (C) 2018 MTDP
- * All rights reserved
  */
 public class Solution {
 
